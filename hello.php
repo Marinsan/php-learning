@@ -1,5 +1,5 @@
 <?php
-<?php
+
 //$greeting="hola mon";
 //Xivatos Ctrl + / (teclat numeric)
 //echo "Hola mon"; // Hardcoded
@@ -16,13 +16,5 @@
 
 // WHISFUL THINKING | WISHFUL PROGRAMMING
 
-function hello($who="hola mon") {
-    //opcional //parametres opcionals
-
-    if ($who=='hola mon'){
-        echo $who;
-    }else{
-        echo 'hola ' . $who;
-    }
-}
+require 'functions.php';
 hello('mon');

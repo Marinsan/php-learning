@@ -8,3 +8,12 @@ Xivatos -> echo, dd, dump, Laravel dump server, logs, Laravel DebugBar, var_dump
 //var_dump();
 //
 //nom([Parametres]);
+
+Wet write Everything
+
+Require -> Insereix el codi del fitxer que l'indiques.
+
+SEPARATION OF CONCENS
+
+{{ $greeting }} -> PHP
+{{ greeting }} -> Java
