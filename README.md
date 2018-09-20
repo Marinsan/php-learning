@@ -42,3 +42,4 @@ Enters -> $num = 15;
 
 
 Array/Vector
+ donar dalta a jetbarins per guardar els settings del pstorm

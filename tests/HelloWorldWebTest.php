@@ -1,24 +1,18 @@
 <?php
-
-
 use PHPUnit\Framework\TestCase;
-
 class HelloWorldWebTest extends TestCase
 {
     public function testHelloWorld ()
     {
-        require('../hello.php');
-        $this->expectOutputString('hola mon');
-        $this->assertTrue($this->have(needle: 'Hola mon'));
+        require('../index.php');
+        $this->expectOutputString('Hola mon');
+//        $this->expectOutputRegex()
+//        $this->assertTrue($this->have('Hola mon', $this->));
     }
-    public function testMyFunction() {
-//        include_once 'path/to/script.php';
-//        $result = someFunction();
-//
-//        $this->assertEquals('expected result', $result);
-
+//     returns true if $needle is a substring of $haystack
+    protected function have($needle, $haystack)
+    {
+        return strpos($haystack, $needle) !== false;
     }
-
-
 }
 

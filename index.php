@@ -3,7 +3,9 @@
 require 'functions.php';
 
 var_dump($_GET);
-die();
+
+$greeting= hello($_GET['who']);
+//die();
 
 //Array/Vector
 //
@@ -25,7 +27,7 @@ die();
 //    'mobile' => '668897234'
 //]
 
-
+require 'functions.php';
 $greeting= hello($_GET['who']);
-
 require 'views/index.blade.php';
+

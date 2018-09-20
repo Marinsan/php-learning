@@ -18,3 +18,12 @@
 
 require 'functions.php';
 hello('mon');
+
+//echo 'Hola mon'; //sempre que podrem escollirem cometes simples
+//echo "Hola mon"
+//echo 'Hola' . $greeting; // Hola pepe
+//echo "Hola $greeting"; // Hola $greeting
+//
+//echo $($greeting);
+//
+//echo "hola$(greeting)Prova"; //holapepeProva
