@@ -3,9 +3,18 @@
 //new Task();
 
 $tasks = [
-    'Comprar pa',
-    'Comprar llet',
-    'Estudiar PHP'
+    [
+        'name' => 'Comprar pa',
+        'completed' => false
+    ],
+    [
+        'name' => 'Comprar llet',
+        'completed' => true
+    ],
+    [
+        'name' => 'Estudiar PHP',
+        'completed' => false
+    ]
 ];
 
 require 'views/tasks.blade.php';

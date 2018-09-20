@@ -8,13 +8,26 @@
     <title>Tasques</title>
 </head>
 <body>
-
+<!--
+<?php
+foreach ($tasks as $task) {
+echo "<li>$task</li>";
+}
+?>
+-->
 <ul>
     <?php foreach ($tasks as $task) : ?>
-        <li><?= $task ?></li>
-    <?php endforeach ; ?>
+        <li>
+            <?php if ($task['completed'] == true): ?>
+                <strike>
+            <?php endif; ?>
+            <?= $task ['name']; ?>
+            <?php if ($task['completed'] == true): ?>
+                </strike>
+            <?php endif; ?>
+        </li>
+    <?php endforeach; ?>
 </ul>
-
 
 <hr>
 <h1>Tasks</h1>
