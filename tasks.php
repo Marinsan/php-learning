@@ -17,4 +17,9 @@ $tasks = [
     ]
 ];
 
+$tasks = [
+    new Task( 'comprar pa',  false),
+    new Task( 'comprar llet',  false),
+    new Task( 'Estudiar PHP',  false),
+]
 require 'views/tasks.blade.php';
