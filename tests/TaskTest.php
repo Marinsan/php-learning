@@ -2,8 +2,9 @@
 
 
 use PHPUnit\Framework\TestCase;
+require '../models/Task.php';
 
-class TaskTest extends TestCase
+class HelloWorldTest extends TestCase
 {
     /**
      * @tests
@@ -12,16 +13,13 @@ class TaskTest extends TestCase
     public function testTaskclass()
     {
         $task = new Task();
+
         $this->assertInstanceOf(Task::class,$task);
     }
 
-
-
-
-
     public function task ()
     {
-        require_once('../taskphp.php');
+        require_once('../tasks.php');
 
     }
 //    public function testMyFunction() {
