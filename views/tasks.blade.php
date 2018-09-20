@@ -9,36 +9,24 @@
 </head>
 <body>
 <!--
-<?php
-foreach ($tasks as $task) {
-echo "<li>$task</li>";
-}
-?>
+//<?php
+//foreach ($tasks as $task) {
+//echo "<li>$task</li>";
+//}
+//?>
 -->
 <ul>
     <?php foreach ($tasks as $task) : ?>
-        <li>
-            <?php if ($task->completed == true): ?>
-                <strike>
+    <li>
+        <?php if ($task->completed == true): ?>
+        <strike>
             <?php endif; ?>
-            <?= $task ->name; ?>
+            <?= $task->name; ?>
             <?php if ($task->completed == true): ?>
-                </strike>
-            <?php endif; ?>
-        </li>
-    <?php endforeach; ?>
-</ul>
-
-<hr>
-<h1>Tasks</h1>
-<p>Les meves tasques pendents són:</p>
-
-<ul>
-    <li>Comprar pa</li>
-    <li>Comprar llet</li>
-    <li>Practicar PHP</li>
-    <li><strike>Practicar Git</strike></strike></li>
-    <li><strike> bbladaojshd asjd</strike></li>
+        </strike>
+        <?php endif; ?>
+    </li>
+    <?php endforeach;?>
 </ul>
 </body>
 </html>
