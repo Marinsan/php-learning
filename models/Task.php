@@ -2,31 +2,26 @@
 
 class Task
 {
-    //PROPIETATS
+    // PROPIETATS
     public $name;
     public $completed;
-
-    //CONSTRUCTOR
     /**
      * Task constructor.
      * @param $name
      * @param $completed
      */
-    public function __construct($name = "", $completed = false)
+    public function __construct($name = '', $completed = false)
     {
         $this->name = $name;
         $this->completed = $completed;
     }
-
-    // ORGANITZAR
-    public function completed()
+    public function complete()
     {
-    $this->completed=true;
+        $this->completed = true;
     }
-
     public static function all()
     {
-        $pdo = connection::connect();
-        $tasks = QueryBuidler::fetchAll($pdo,table:'tasks');
+        $pdo = Connection::connect();
+        return QueryBuilder::fetchAll($pdo,'Tasks');
     }
 }

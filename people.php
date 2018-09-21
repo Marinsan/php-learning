@@ -1,9 +1,8 @@
 <?php
 
-require 'models/people.php';
-require 'framework/database/connect.php';
-require 'framework/database/querybuilder.php';
-$pdo = connect();
-$people = fetchAll($pdo,'people');
-require 'views/people.blade.php';
+require 'models/People.php';
+require 'framework/bootstrap.php';
 
+$people = People::all();
+
+require 'views/people.blade.php';

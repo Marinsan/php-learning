@@ -1,8 +1,8 @@
 <?php
-class QueryBuidler {
-    public static function fetchAll($connection) {
-        $statment = $connection->prepare('SELECT * FROM people');
-        $statment->execute();
-        return = $statment->fetchAll(PDO::FETCH_CLASS);
-}
+class QueryBuilder {
+    public static function fetchAll($connection, $table) {
+        $statement = $connection->prepare("SELECT * FROM $table;");
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_CLASS);
+    }
 }

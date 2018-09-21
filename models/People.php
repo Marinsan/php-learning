@@ -13,4 +13,10 @@ class People
         $this->name = $name;
         $this->dni = $dni;
     }
+
+    public static function all()
+    {
+        $pdo = Connection::connection();
+        return QueryBuilder::fetchAll($pdo,'people');
+    }
 }
