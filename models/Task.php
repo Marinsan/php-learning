@@ -24,4 +24,9 @@ class Task
     $this->completed=true;
     }
 
+    public static function all()
+    {
+        $pdo = connection::connect();
+        $tasks = QueryBuidler::fetchAll($pdo,table:'tasks');
+    }
 }
