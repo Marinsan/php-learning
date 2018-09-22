@@ -16,7 +16,7 @@ class People
 
     public static function all()
     {
-        $pdo = Connection::connection();
+        $pdo = Connection::connect();
         return QueryBuilder::fetchAll($pdo,'people');
     }
 }

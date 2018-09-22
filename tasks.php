@@ -32,11 +32,14 @@
 //$statment->execute();
 //$tasks = $statment->fetchAll(PDO::FETCH_CLASS);
 
-require 'framework/bootstrap.php';
-require 'models/Task.php';
+//require 'framework/bootstrap.php';
+//require 'models/Task.php';
 
 
 //$statment = $pdo->prepare('SELECT * FROM Tasks');
-$tasks = Task::all();
+
+$database = require 'framework/bootstrap.php';
+
+$tasks = $database->selectAll('Tasks');
 
 require 'views/tasks.blade.php';
