@@ -8,13 +8,18 @@
     <title>Tasques</title>
 </head>
 <body>
-<!--
-//<?php
-//foreach ($tasks as $task) {
-//echo "<li>$task</li>";
-//}
-//?>
--->
+<!-- SEMANTICA -->
+
+<nav>
+    <ul>
+    <li><a href="/tasks.php">Tasques</a></li>
+    <li><a href="/people.php">Persones</a></li>
+    <li><a href="/lessons.php">Llisons</a></li>
+    <li><a href="/contact.php">Contacte</a></li>
+    <li><a href="/about.php">Sobre nosaltres</a></li>
+    </ul>
+</nav>
+
 <ul>
     <?php foreach ($tasks as $task) : ?>
     <li>
