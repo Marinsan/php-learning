@@ -10,9 +10,9 @@
 <body>
 
 <ul>
-    <?php foreach ($people as $person) : ?>
+    <?php foreach ($data as $info) : ?>
     <li>
-        <?= $person->name; ?> | <?= $person->dni; ?>
+        <?= $info->name; ?>
     </li>
     <?php endforeach;?>
 </ul>

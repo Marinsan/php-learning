@@ -10,9 +10,9 @@
 <body>
 
 <ul>
-    <?php foreach ($people as $person) : ?>
+    <?php foreach ($myself as $my) : ?>
     <li>
-        <?= $person->name; ?> | <?= $person->dni; ?>
+        <?= $my->name; ?>
     </li>
     <?php endforeach;?>
 </ul>

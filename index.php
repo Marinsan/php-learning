@@ -2,8 +2,9 @@
 
 require 'vendor/autoload.php';
 require 'framework/bootstrap.php';
-//require direct($_SERVER['REQUEST_URI']);
-require Router::direct($_SERVER['REQUEST_URI']);
+require direct($_SERVER['REQUEST_URI']);
+
+//require Router::direct($_SERVER['REQUEST_URI']);
 
 // FC -> FRONT CONTROLLER -> un sol fitxer php (index.php) executa tota l'aplicacio
 // SEMPRE s'executa primer index.php

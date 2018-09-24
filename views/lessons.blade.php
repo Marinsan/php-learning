@@ -10,9 +10,9 @@
 <body>
 
 <ul>
-    <?php foreach ($people as $person) : ?>
+    <?php foreach ($school as $lesson) : ?>
     <li>
-        <?= $person->name; ?> | <?= $person->dni; ?>
+        <?= $lesson->name; ?>
     </li>
     <?php endforeach;?>
 </ul>

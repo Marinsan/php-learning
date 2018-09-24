@@ -4,10 +4,6 @@
 //require 'framework/bootstrap.php';
 //$people = People::all();
 //
-
-$database = require 'framework/bootstrap.php';
-
-$lessons = $database->selectAll('lessons');
-
-require 'views/people.blade.php';
-
+//$myself = About::all();
+//require view('about',$myself);
+require '../views/about.blade.php';

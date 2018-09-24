@@ -5,9 +5,5 @@
 //$people = People::all();
 //
 
-$database = require 'framework/bootstrap.php';
-
-$lessons = $database->selectAll('lessons');
-
-require 'views/people.blade.php';
-
+$school = Lessons::all();
+require view('lessons',$school);

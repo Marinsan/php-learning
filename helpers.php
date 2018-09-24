@@ -1,6 +1,6 @@
 <?php
 
-function view($view){
+function view($view) {
     return "views/$view.blade.php";
 }
 
