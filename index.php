@@ -1,33 +1,19 @@
 <?php
 
-require 'functions.php';
+require 'vendor/autoload.php';
+require 'framework/bootstrap.php';
+//require direct($_SERVER['REQUEST_URI']);
+require Router::direct($_SERVER['REQUEST_URI']);
 
-var_dump($_GET);
+// FC -> FRONT CONTROLLER -> un sol fitxer php (index.php) executa tota l'aplicacio
+// SEMPRE s'executa primer index.php
+// URI
+// ROUTEE per URI
 
-$greeting= hello($_GET['who']);
-//die();
+// Dos opcions
+// Funcio global
+// Metode dins d'una classe (funcio dins d'una classe el seu nom tecnic es metode)
 
-//Array/Vector
-//
-//$platan = 'platan';
-//$presec = 'presec';
-//$taronja = 'taronja';$fruites = [$platan, $presec, $taronja];
-//
-//echo $fruites[0];
-//die();
+//require $router->direct($uri);
 
-//Array associatiu
-
-
-//$person="Cristian Marin Tejeda";
-
-//$person = [
-//    'name' => 'Cristian Marin Tejeda',
-//    'dni' => '1231233N'
-//    'mobile' => '668897234'
-//]
-
-require 'functions.php';
-$greeting= hello($_GET['who']);
-require 'views/index.blade.php';
-
+//require Route::direct($uri);

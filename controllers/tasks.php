@@ -38,8 +38,10 @@
 
 //$statment = $pdo->prepare('SELECT * FROM Tasks');
 
-$database = require 'framework/bootstrap.php';
+//$database = require 'framework/bootstrap.php';
+//
+//$tasks = $database->selectAll('Tasks');
+//require 'views/tasks.blade.php';
 
-$tasks = $database->selectAll('Tasks');
-
-require 'views/tasks.blade.php';
+$tasks = Task::all();
+require view('tasks',$tasks);

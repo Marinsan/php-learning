@@ -1,0 +1,21 @@
+{
+    "name": "marin/php-learning",
+    "authors": [
+        {
+            "name": "Marinsan",
+            "email": "cristianmarin@iesebre.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^7.3"
+    },
+    "autoload": {
+        "classmap": [
+            "./"
+        ],
+        "files": [
+            "./helpers.php",
+            "./Connection.php"
+        ]
+    }
+}
