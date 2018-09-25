@@ -19,7 +19,7 @@
                     <v-list dense>
                         <v-list-tile href="/tasks">
                             <v-list-tile-action>
-                                <v-icon>home</v-icon>
+                                <v-icon>assignment</v-icon>
                             </v-list-tile-action>
                             <v-list-tile-content>
                                 <v-list-tile-title>Tasques</v-list-tile-title>
@@ -27,7 +27,7 @@
                         </v-list-tile>
                         <v-list-tile href="/lessons">
                             <v-list-tile-action>
-                                <v-icon>contact_mail</v-icon>
+                                <v-icon>book</v-icon>
                             </v-list-tile-action>
                             <v-list-tile-content>
                                 <v-list-tile-title>Llisons</v-list-tile-title>
@@ -43,18 +43,18 @@
                         </v-list-tile>
                         <v-list-tile href="/contact">
                             <v-list-tile-action>
-                                <v-icon>contact_mail</v-icon>
+                                <v-icon>alternate_email</v-icon>
                             </v-list-tile-action>
                             <v-list-tile-content>
-                                <v-list-tile-title>Contact</v-list-tile-title>
+                                <v-list-tile-title>Contacte</v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-list-tile href="/about">
                             <v-list-tile-action>
-                                <v-icon>contact_mail</v-icon>
+                                <v-icon>business</v-icon>
                             </v-list-tile-action>
                             <v-list-tile-content>
-                                <v-list-tile-title>About</v-list-tile-title>
+                                <v-list-tile-title>Sobre nosaltres</v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
                     </v-list>
