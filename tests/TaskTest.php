@@ -4,7 +4,7 @@
 use PHPUnit\Framework\TestCase;
 require '../models/Task.php';
 
-class HelloWorldTest extends TestCase
+class TaskTest extends TestCase
 {
     /**
      * @tests
