@@ -2,6 +2,8 @@
 
 require 'vendor/autoload.php';
 require 'framework/bootstrap.php';
+// $router = new Router();
+
 require direct($_SERVER['REQUEST_URI']);
 
 //require Router::direct($_SERVER['REQUEST_URI']);

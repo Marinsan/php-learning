@@ -8,7 +8,7 @@
     <title>Llisons</title>
 </head>
 <body>
-
+<h1>Lessons</h1>
 <ul>
     <?php foreach ($school as $lesson) : ?>
     <li>

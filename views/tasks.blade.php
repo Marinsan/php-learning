@@ -12,14 +12,14 @@
 
 <nav>
     <ul>
-    <li><a href="/controllers/tasks.php">Tasques</a></li>
-    <li><a href="/controllers/people.php">Persones</a></li>
-    <li><a href="/controllers/lessons.php">Llisons</a></li>
-    <li><a href="/controllers/contact.php">Contacte</a></li>
-    <li><a href="/controllers/about.php">Sobre nosaltres</a></li>
+    <li><a href="/tasks">Tasques</a></li>
+    <li><a href="/people">Persones</a></li>
+    <li><a href="/lessons">Llisons</a></li>
+    <li><a href="/contact">Contacte</a></li>
+    <li><a href="/about">Sobre nosaltres</a></li>
     </ul>
 </nav>
-
+<h1>Tasques</h1>
 <ul>
     <?php foreach ($tasks as $task) : ?>
     <li>

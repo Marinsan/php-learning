@@ -8,7 +8,7 @@
     <title>Sobre mi</title>
 </head>
 <body>
-
+<h1>About</h1>
 <ul>
     <?php foreach ($myself as $my) : ?>
     <li>

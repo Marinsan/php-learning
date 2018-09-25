@@ -39,10 +39,4 @@ HTTP REQUEST (TIPUS/METHODS)
 String -> $greeting='Hola';
 Booleans -> $x = true/false;
 Enters -> $num = 15;
-
----
- donar dalta a jetbarins per guardar els settings del pstorm
- 
- simplificar codi person com task
- 
- llevar passwd del fitxer connection i posarla a un altre fitxer config dins d'una array i no pujar el fitxer config ignorarlo al gitignore
+MVC model vista controlador

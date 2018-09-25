@@ -9,6 +9,16 @@
 </head>
 <body>
 
+<nav>
+    <ul>
+        <li><a href="/tasks">Tasques</a></li>
+        <li><a href="/people">Persones</a></li>
+        <li><a href="/lessons">Llisons</a></li>
+        <li><a href="/contact">Contacte</a></li>
+        <li><a href="/about">Sobre nosaltres</a></li>
+    </ul>
+</nav>
+<h1>Persones</h1>
 <ul>
     <?php foreach ($people as $person) : ?>
     <li>

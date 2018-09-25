@@ -7,6 +7,7 @@ function view($view) {
 function direct($uri) {
 //sagafaran dun fitxer routes.php
     $routes = [
+        '/' => 'controllers/tasks.php',
       '/tasks' => 'controllers/tasks.php',
       '/people' => 'controllers/people.php',
       '/lessons' => 'controllers/lessons.php',

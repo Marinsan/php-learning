@@ -6,4 +6,4 @@
 //
 //$myself = About::all();
 //require view('about',$myself);
-require '../views/about.blade.php';
+require view('about');
