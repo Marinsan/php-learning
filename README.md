@@ -40,3 +40,5 @@ String -> $greeting='Hola';
 Booleans -> $x = true/false;
 Enters -> $num = 15;
 MVC model vista controlador
+
+CRUD -> CREATE RETRIEVE UPDATE DELETE
