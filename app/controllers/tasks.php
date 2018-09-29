@@ -34,14 +34,14 @@
 
 //require 'framework/bootstrap.php';
 //require 'models/Task.php';
-
+//
 
 //$statment = $pdo->prepare('SELECT * FROM Tasks');
 
 //$database = require 'framework/bootstrap.php';
 //
 //$tasks = $database->selectAll('Tasks');
-//require 'views/tasks.blade.php';
-
-$tasks = Task::all();
-require view('tasks',$tasks);
+////require 'views/tasks.blade.php';
+//
+//$tasks = Task::all();
+//require view('tasks',$tasks);

@@ -12,5 +12,5 @@
 //require 'views/people.blade.php';
 //
 
-$people = People::all();
-require view('people',$people);
+//$people = People::all();
+//require view('people',$people);

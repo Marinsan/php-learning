@@ -1,7 +1,10 @@
 <?php
 
-require_once 'app/helpers.php';
-require_once 'framework/database/Connection.php';
-require_once 'app/models/Task.php';
-require_once 'app/models/People.php';
-require 'app/models/Lessons.php';
+use Framework\App;
+use Framework\Router;
+
+require 'database/Connection.php';
+require 'database/QueryBuilder.php';
+App::bind('config', require 'config.php');
+$routes = require 'routes.php';
+Router::define($routes);

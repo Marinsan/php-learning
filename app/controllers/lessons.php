@@ -5,5 +5,5 @@
 //$people = People::all();
 //
 
-$school = Lessons::all();
-require view('lessons',$school);
+//$school = Lessons::all();
+//require view('lessons',$school);
