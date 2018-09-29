@@ -6,6 +6,4 @@ class AboutController {
     {
         require view('about');
     }
-
-
 }

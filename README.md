@@ -42,3 +42,18 @@ Enters -> $num = 15;
 MVC model vista controlador
 
 CRUD -> CREATE RETRIEVE UPDATE DELETE
+
+ Tasques a realitzar 
+- 
+- Refactoritzacio de controladors en comtes de fitxers utilitzar
+ laracast episode 23
+- Utilitzar a totes les classes l'espai de noms (namespace) App
+ laracast episode 24
+- Crear un formiulari per afegir tasques (nomes preguntar nom)
+ laracast episode 20
+ IMPORTANT cal canviar router i routes per acceptar GET I POST
+ 
+ 
+ # Laravel
+ -
+ 

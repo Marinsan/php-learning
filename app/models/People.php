@@ -1,4 +1,10 @@
 <?php
+
+namespace App\Models;
+
+use Framework\Database\Connection;
+use Framework\Database\QueryBuilder;
+
 class People
 {
     public $name;
@@ -13,7 +19,6 @@ class People
         $this->name = $name;
         $this->dni = $dni;
     }
-
     public static function all()
     {
         $pdo = Connection::connect();

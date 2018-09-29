@@ -1,5 +1,7 @@
 <?php
 
+namespace Framework;
+
 class Router
 {
     private static $routes = [];
@@ -17,7 +19,6 @@ class Router
         if (array_key_exists($uri,self::$routes)) return self::$routes[$uri];
         throw new Exception('La pàgina que demaneu no existeix');
     }
-
     public function execute($controller,$method)
     {
         $controller = new $controller();

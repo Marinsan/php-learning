@@ -1,10 +1,14 @@
 <?php
 
+namespace App\Models;
+
+use Framework\Database\Connection;
+use Framework\Database\QueryBuilder;
+
 class Lessons
 {
     public $name;
     public $teacher;
-
     /**
      * Lessons constructor.
      * @param $name
@@ -15,7 +19,6 @@ class Lessons
         $this->name = $name;
         $this->teacher = $teacher;
     }
-
     public static function all()
     {
         $pdo = Connection::connect();
