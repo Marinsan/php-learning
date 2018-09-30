@@ -8,25 +8,25 @@ class PagesController {
 
     public function home()
     {
-//        Task::all();
+       // Task::all();
         return view('tasks');
     }
 
     public function tasks()
     {
-//        Task::all();
+      // Task::all();
         return view('tasks');
     }
 
     public function people()
     {
-//        People::all();
+        //People::all();
         return view('people');
     }
 
     public function lessons()
     {
-//        Lessons::all();
+        //Lessons::all();
         return view('lessons');
     }
 
