@@ -1,11 +1,14 @@
 <?php
 
 
+use App\Framework\Router;
+
 require 'vendor/autoload.php';
 require 'framework/bootstrap.php';
 // $router = new Router();
 
-Router::direct($_SERVER['REQUEST_URI']);
+Router::direct($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+
 
 //require Router::direct($_SERVER['REQUEST_URI']);
 

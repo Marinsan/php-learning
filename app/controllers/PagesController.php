@@ -1,7 +1,10 @@
 <?php
 
-# Per no tenir un fitxer per a cada controlador, les reunim en sols un.
+namespace App\Controllers;
 
+use Lessons;
+use People;
+use Task;
 
 class PagesController
 {

@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Framework;
+
 class Router {
     public static $routes = [];
     public function routes()

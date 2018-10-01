@@ -1,6 +1,6 @@
 <?php
 
-
+namespace App\Framework;
 
 class App {
     private static $registry = [];
@@ -10,7 +10,9 @@ class App {
     }
     public function resolve($key)
     {
-        if (!array_key_exists($key,static::$registry)) throw new Exception ("No $key found in registry");
+        if (!array_key_exists($key,static::$registry)) {
+            throw new Exception ("No $key found in registry");
+        }
         return static::$registry[$key];
     }
 }

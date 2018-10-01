@@ -3,33 +3,33 @@
 return [
     'GET' => [
         '/' => [
-            'controller' => 'PagesController@tasks',
+            'controller' => 'App\Controllers\PagesController@tasks',
             'title' => 'Home'
         ],
         '/tasks' => [
-            'controller' => 'PagesController@tasks',
+            'controller' => 'App\Controllers\PagesController@tasks',
             'title' => 'Tasks'
         ],
         '/people' => [
-            'controller' => 'PagesController@people',
+            'controller' => 'App\Controllers\PagesController@people',
             'title' => 'People'
         ],
         '/lessons' => [
-            'controller'=>'PagesController@lessons',
+            'controller'=>'App\Controllers\PagesController@lessons',
             'title' => 'Lessons'
         ],
         '/about' => [
-            'controller' => 'PagesController@about',
+            'controller' => 'App\Controllers\PagesController@about',
             'title' => 'About'
         ],
         '/contact' => [
-            'controller' => 'PagesController@contact',
+            'controller' => 'App\Controllers\PagesController@contact',
             'title' => 'Contact'
         ]
     ],
     'POST' => [
         '/tasks' => [
-            'controller' => 'PagesController@store',
+            'controller' => 'App\Controllers\PagesController@store',
             'title' => 'Tasks'
         ],
     ]
