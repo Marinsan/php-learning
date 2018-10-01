@@ -1,6 +1,5 @@
 <?php
 
-use Framework\Router;
 
 require 'vendor/autoload.php';
 require 'framework/bootstrap.php';

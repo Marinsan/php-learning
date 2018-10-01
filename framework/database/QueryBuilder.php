@@ -1,6 +1,6 @@
 <?php
 
-namespace Framework\Database;
+
 
 class QueryBuilder {
     public static function fetchAll($connection, $table) {

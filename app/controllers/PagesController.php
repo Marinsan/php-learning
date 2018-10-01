@@ -1,42 +1,36 @@
 <?php
 
-namespace App\Controllers;
-
 # Per no tenir un fitxer per a cada controlador, les reunim en sols un.
 
-class PagesController {
 
-    public function home()
-    {
-       // Task::all();
-        return view('tasks');
-    }
-
+class PagesController
+{
     public function tasks()
     {
-      // Task::all();
-        return view('tasks');
+        $tasks = Task::all();
+        require view('tasks');
     }
 
     public function people()
     {
-        //People::all();
-        return view('people');
+        $people = People::all();
+        require view('people');
     }
 
     public function lessons()
     {
-        //Lessons::all();
-        return view('lessons');
-    }
-
-    public function contact()
-    {
-        return view('contact');
+        $lessons = Lessons::all();
+        require view('lessons');
     }
 
     public function about()
     {
-        return view('about');
+        require view('about');
+    }
+
+    public function contact()
+    {
+        require view('contact');
     }
 }
+

@@ -1,9 +1,6 @@
 <?php
 
-namespace App\Models;
 
-use Framework\Database\Connection;
-use Framework\Database\QueryBuilder;
 
 class Task
 {

@@ -1,44 +1,36 @@
 <?php
 
-namespace Framework;
-
-class Router
-{
-    protected $routes = [
-        'GET' => [],
-        'POST' => []
-    ];
-    public function get($uri,$action)
+class Router {
+    public static $routes = [];
+    public function routes()
     {
-        $this->routes['GET'][$uri] = $action;
+        return self::$routes;
     }
-    public function post($uri,$action)
+    public function define($routes)
     {
-        $this->routes['POST'][$uri] = $action;
+        self::$routes= $routes;
     }
-    public static function load($file)
+    public static function direct($uri, $requestType)
     {
-        $router = new static;
-        require $file;
-        return $router;
+        if (array_key_exists($uri, self::$routes[$requestType])) {
+            return self::callAction(
+                ...explode('@', self::$routes[$requestType][$uri]['controller'])
+            );
+        }
+        throw new Exception('Ruta no definida per a aquesta URI.');
     }
-//    private static $routes = [
-//        'GET' => [],
-//        'POST' => []
-//    ];
-//    public static function routes()
-//    {
-//        return self::$routes;
-//    }
-//    public static function define($routes)
-//    {
-//        self::$routes= $routes;
-//    }
-    public static function direct($uri = null)
+    protected static function callAction($controller, $action)
     {
-        if (!$uri) return 'app/controllers/tasks.php';
-        if (array_key_exists($uri,self::$routes)) return self::$routes[$uri];
+        if (! method_exists($controller, $action)){
+            throw new Exception(
+                "El {$controller} no respon a l'acció {$action}"
+            );
+        }
+        return (new $controller)->$action();
     }
-
+    public function execute($controller,$method)
+    {
+        $controller = new $controller();
+        $controller->$method();
+    }
 }
-
