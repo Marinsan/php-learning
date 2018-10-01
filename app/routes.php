@@ -28,9 +28,9 @@ return [
         ]
     ],
     'POST' => [
-        '/task' => [
-            'controller' => 'TaskController@store',
-            'title' => 'Tasks'
+        'tasks' => [
+            'controller' => 'PagesController@store',
+            'title' => 'task'
         ],
     ]
 ];

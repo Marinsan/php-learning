@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Framework\App;
 use Lessons;
 use People;
 use Task;
@@ -34,6 +35,15 @@ class PagesController
     public function contact()
     {
         require view('contact');
+    }
+
+    public function store()
+    {
+        $database = App::resolve('database');
+        $database->insert('tasks', [
+            "name" => $_POST['name']
+        ]);
+        return view('tasks');
     }
 }
 

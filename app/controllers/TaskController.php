@@ -15,7 +15,7 @@ class TaskController {
     return view('tasks');
 }
     /**
-     * Store a new user in the database.
+     * Store a new task in the database.
      */
     public function store()
 {
