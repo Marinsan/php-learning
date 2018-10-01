@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Framework\Database\QueryBuilder;
 
 class Task
 {

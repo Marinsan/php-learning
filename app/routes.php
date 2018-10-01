@@ -28,8 +28,8 @@ return [
         ]
     ],
     'POST' => [
-        '/tasks' => [
-            'controller' => 'PagesController@store',
+        '/task' => [
+            'controller' => 'TaskController@store',
             'title' => 'Tasks'
         ],
     ]

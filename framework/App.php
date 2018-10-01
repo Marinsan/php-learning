@@ -11,7 +11,7 @@ class App {
     public function resolve($key)
     {
         if (!array_key_exists($key,static::$registry)) {
-            throw new Exception ("No $key found in registry");
+            new \Exception ("No $key found in registry");
         }
         return static::$registry[$key];
     }

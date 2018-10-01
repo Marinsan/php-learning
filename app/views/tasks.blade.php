@@ -35,6 +35,14 @@
         </v-list-tile>
         <?php endforeach;?>
 
+        <v-divider></v-divider>
+        <v-list-tile>
+        <form action="/tasks" method="POST">
+            Tasca: <input type="text" name="name">
+            <button type="submit">Afegir</button>
+        </form>
+        </v-list-tile>
+
     </v-list>
 </v-card>
 

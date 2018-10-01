@@ -19,7 +19,7 @@ class Router {
                 ...explode('@', self::$routes[$requestType][$uri]['controller'])
             );
         }
-        throw new Exception('Ruta no definida per a aquesta URI.');
+        new \Exception('Ruta no definida per a aquesta URI.');
     }
     protected static function callAction($controller, $action)
     {

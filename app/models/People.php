@@ -1,5 +1,7 @@
 <?php
 
+use App\Framework\Database\QueryBuilder;
+
 class People
 {
     public $name;
