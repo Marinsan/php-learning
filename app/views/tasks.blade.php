@@ -37,8 +37,8 @@
 
         <v-divider></v-divider>
         <v-list-tile>
-        <form action="/tasks" method="POST">
-            Tasca: <input type="text" name="name">
+        <form action="/tasks" method="post">
+            Tasca: <input type="text" name="name" required>
             <button type="submit">Afegir</button>
         </form>
         </v-list-tile>

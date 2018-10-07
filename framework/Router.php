@@ -2,7 +2,8 @@
 
 namespace App\Framework;
 
-class Router {
+class Router
+{
     public static $routes = [];
     public function routes()
     {
@@ -19,20 +20,21 @@ class Router {
                 ...explode('@', self::$routes[$requestType][$uri]['controller'])
             );
         }
-        new \Exception('Ruta no definida per a aquesta URI.');
+        new \Exception('Ruta no definida per a esta URI.');
     }
     protected static function callAction($controller, $action)
     {
-
         $controller = "App\\Controllers\\{$controller}";
         $controller = new $controller;
-
         if (! method_exists($controller, $action)){
-            throw new Exception(
+            new \Exception(
                 "El {$controller} no respon a l'acció {$action}"
             );
         }
         return (new $controller)->$action();
+    }
+    public static function redirect($uri = '/'){
+        header('Location: '.$uri);
     }
     public function execute($controller,$method)
     {

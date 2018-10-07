@@ -1,13 +1,15 @@
 <?php
 
+use App\Controllers;
+
 return [
     'GET' => [
         '/' => [
-            'controller' => 'PagesController@tasks',
+            'controller' => 'TasksController@index',
             'title' => 'Home'
         ],
         '/tasks' => [
-            'controller' => 'PagesController@tasks',
+            'controller' => 'TasksController@index',
             'title' => 'Tasks'
         ],
         '/people' => [
@@ -28,9 +30,9 @@ return [
         ]
     ],
     'POST' => [
-        'tasks' => [
-            'controller' => 'PagesController@store',
-            'title' => 'task'
+        '/tasks' => [
+            'controller' => 'TasksController@store',
+            'title' => 'Tasks'
         ],
     ]
 ];

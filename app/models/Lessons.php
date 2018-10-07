@@ -1,6 +1,7 @@
 <?php
-
+namespace App\Models;
 use App\Framework\Database\QueryBuilder;
+use Connection;
 
 class Lessons
 {
